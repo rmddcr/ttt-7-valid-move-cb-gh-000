@@ -1,6 +1,7 @@
 # code your #valid_move? method here
 def valid_move?(board,index)
-  if !( position_taken?(board,index) && 0<=index && index<9  && index.is_a? Integer)
+  param = position_taken?(board,index)
+  if !(  param && 0<=index && index<9  && index.is_a? Integer)
     return true
   else
     return false
